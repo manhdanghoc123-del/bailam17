@@ -1,0 +1,73 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.demo-section {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.demo-section p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Flex Container */
+.container {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    gap: 10px;
+    border: 2px solid #2c3e50;
+    background-color: #ecf0f1;
+    padding: 10px;
+
+    /* -------------------------------------------------------------
+       THAY ĐỔI VÀ THỬ CÁC GIÁ TRỊ CỦA flex-wrap TẠI ĐÂY:
+       - flex-wrap: wrap;          (Cho phép xuống dòng theo hướng thường)
+       - flex-wrap: nowrap;        (Không cho xuống dòng, co lại nếu cần)
+       - flex-wrap: wrap-reverse;  (Cho phép xuống dòng, đảo ngược Cross Axis)
+       - flex-wrap: initial;       (Trở về giá trị mặc định: nowrap)
+       ------------------------------------------------------------- */
+    flex-wrap: wrap; 
+}
+
+/* Flex Item */
+.item {
+    width: 180px;
+    height: 80px;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
